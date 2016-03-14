@@ -15,7 +15,7 @@ pi = require("./data/pi.json").digits
 
 module.exports = (robot) ->
   robot.respond /pi digit(?:s)? (\d+)(?: to (\d+))?/, (msg) ->
-    [low, hi] = msg.match()
+    [_, low, hi] = msg.match
     low = low - 1
     if hi == undefined
       msg.send pi[low]
