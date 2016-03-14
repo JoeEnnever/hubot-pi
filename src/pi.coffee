@@ -24,6 +24,6 @@ module.exports = (robot) ->
     if hi < low
       msg.send "Whoops! The second digit must be higher!"
       return
-    msg.send pi[low..high]
+    msg.send pi[low..hi]
 
 
